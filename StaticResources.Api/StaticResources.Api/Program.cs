@@ -34,6 +34,8 @@ app.MapControllers();
 //if (app.Environment.IsProduction())
 //    app.ProtectStaticContent("/images/tent.jpg");
 
+app.ProtectStaticContent("/images/tent.jpg", "Authenticated");
+
 app.UseStaticFiles();
 
 app.Run();
